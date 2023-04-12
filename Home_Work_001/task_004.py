@@ -14,18 +14,17 @@
 print ("Введите общее количество журавликов:")
 count_crane = int(input())
 
-Peter = None
-Kate = None
-Serge = None
-
+peter = None
+kate = None
+serge = None
 if count_crane == 0:
     print ("Никто не делал Журавликов.")
 elif count_crane > 0:
-    Kate = count_crane / 3 * 2
-    if (Kate) % 4 == 0:
-        Peter = (Kate /4)   
-        Serge = Peter 
-        print (int(Peter), int(Kate), int(Serge))
+    kate = count_crane/3*2
+    if kate % 4 == 0:
+        peter = (kate/4)   
+        serge = peter 
+        print (int(peter), int(kate), int(serge))
     else:
         print ("Нельзя определить.")
 else:

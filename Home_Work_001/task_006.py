@@ -17,9 +17,13 @@ left_half = None
 right_half = None
 
 if 99999<ticket_number<1000000:
-    left_half = int(ticket_number/100000 % 10) + int(ticket_number/10000 % 10) + int(ticket_number/1000 % 10) 
+    left_half = (int(ticket_number/100000 % 10) + 
+                int(ticket_number/10000 % 10) + 
+                int(ticket_number/1000 % 10))
     print ("Сумма первых 3 цифр =",left_half)
-    right_half = int(ticket_number/100 % 10) + int(ticket_number/10 % 10) + int(ticket_number % 10)
+    right_half = (int(ticket_number/100 % 10) + 
+                int(ticket_number/10 % 10) + 
+                int(ticket_number % 10))
     print ("Сумма последних 3 цифр =",right_half)
     if left_half == right_half:
         print ("yes =)","У вас счастливый билет!")
