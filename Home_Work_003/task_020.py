@@ -63,7 +63,8 @@ eng_rus_alphabet = ({**english_alphabet,
 
 count = 0
 for i in user_text:
-    for key, value in eng_rus_alphabet.items():
-        if key == i:
-            count += value
+    count += eng_rus_alphabet[i]
+    # for key, value in eng_rus_alphabet.items():
+    #     if key == i:
+    #         count += value
 print ("Cтоимость введенного слова =>", count, "очков")
