@@ -11,7 +11,6 @@
 # 2 2
 #     4
 
-
 # def sum_nums(i, j):
 #     if j == 0:
 #         return i
